@@ -8,9 +8,15 @@ public class Atividade8 {
         int number;
         System.out.println("Digite um numero: ");
         number = sc.nextInt();
-        for(int cont = 1; cont <= 10; cont++){
-            System.out.println("A tabuada é: ");
+        for(int cont = 1; cont <= 10&& number!=0; cont++){
+            System.out.println("tabuada de"+number+ "é: ");
+            System.out.println(number+"X"+cont+"=");
             System.out.println(number*cont);
+            if(cont==10){
+                System.out.println("digite o proximo numero:(0 para sair)");
+                number = sc.nextInt();
+                cont=0;
+            };
         }
     }
 }
